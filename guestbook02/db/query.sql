@@ -21,4 +21,7 @@ delete from guestbook where password='1234';
 
 -- login
 select * from user;
+delete from user;
 select id, name from user where email='12@12' and password='1234';
+
+update user set name = "rir", password="asd", gender="male" where id=1;
