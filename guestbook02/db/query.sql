@@ -25,3 +25,13 @@ delete from user;
 select id, name from user where email='12@12' and password='1234';
 
 update user set name = "rir", password="asd", gender="male" where id=1;
+
+
+
+DROP TABLE IF EXISTS `webdb`.`guestbook_log` ;
+
+CREATE TABLE IF NOT EXISTS `webdb`.`guestbook_log` (
+  `date` DATE NOT NULL,
+  `count` INT NOT NULL,
+  PRIMARY KEY (`date`))
+ENGINE = InnoDB;
